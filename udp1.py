@@ -11,3 +11,4 @@ while True:
       str3=str2.upper()
       s.sendto(str3.encode('utf-8'),str1)
 s.close()
+#服务器端
