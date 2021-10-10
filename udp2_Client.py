@@ -3,12 +3,9 @@
 # coding: utf-8
 
 import socket
-
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
 s.connect(('127.0.0.1',9999))
 print('I am connecting the Server!')
-
 for fwt in ['aBch','f服务d','h7Tq','.']:
 	s.sendto(fwt.encode('utf-8'),('127.0.0.1',9999))
 	str1,addr = s.recvfrom(1024)
